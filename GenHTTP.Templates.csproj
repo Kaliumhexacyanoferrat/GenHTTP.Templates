@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    
+    <PackageType>Template</PackageType>
+    <PackageVersion>5.2</PackageVersion>
+    <PackageId>GenHTTP.Templates</PackageId>
+    
+    <Title>GenHTTP Templates</Title>
+    <Authors>Andreas Nägeli</Authors>
+    <Description>Templates to easily create web applications using the GenHTTP SDK.</Description>
+    <PackageTags>dotnet-new;templates;GenHTTP;webservice;website;webapp</PackageTags>
+
+    <TargetFramework>net5.0</TargetFramework>
+
+    <IncludeContentInPack>true</IncludeContentInPack>
+    <IncludeBuildOutput>false</IncludeBuildOutput>
+    <ContentTargetFolders>content</ContentTargetFolders>
+    <NoWarn>$(NoWarn);NU5128</NoWarn>
+    
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="Templates\**\*" Exclude="Templates\**\bin\**;Templates\**\obj\**" />
+    <Compile Remove="**\*" />
+  </ItemGroup>
+
+</Project>
