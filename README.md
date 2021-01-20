@@ -13,7 +13,9 @@ dotnet new -i GenHTTP.Templates
 
 ## Included Templates
 
+To use one of the templates below, create a new folder and run `dotnet new <template>`.
+
 | Template      | Description  | 
 | ------------- |------------- | 
-| `dotnet new genhttp-webservice` | Creates a project that will host a new [REST web service](https://genhttp.org/documentation/content/webservices) |
-| `dotnet new genhttp-website-mvc-scriban` | Creates a website using the [MVC pattern](https://genhttp.org/documentation/content/controllers) and with [Scriban](https://github.com/scriban/scriban/) as a templating engine |
+| `genhttp-webservice` | Creates a project that will host a new [REST web service](https://genhttp.org/documentation/content/webservices). |
+| `genhttp-website-mvc-scriban` | Creates a website using the [MVC pattern](https://genhttp.org/documentation/content/controllers) and with [Scriban](https://github.com/scriban/scriban/) as a templating engine. |
