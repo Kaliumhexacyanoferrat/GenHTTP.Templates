@@ -1,0 +1,13 @@
+{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "Andreas Nägeli",
+  "classifications": [ "GenHTTP", "Website", "MVC", "Scriban" ],
+  "identity": "GenHTTP.Templates.Websites.MVC.Scriban",
+  "name": "GenHTTP: MVC Website with Scriban",
+  "shortName": "genhttp-website-mvc-scriban",
+  "sourceName": "$safeprojectname$",
+  "tags": {
+    "language": "C#",
+    "type": "project"
+  }
+}
