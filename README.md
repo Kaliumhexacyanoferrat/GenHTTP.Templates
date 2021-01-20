@@ -18,4 +18,4 @@ To use one of the templates below, create a new folder and run `dotnet new <temp
 | Template      | Description  | 
 | ------------- |------------- | 
 | `genhttp-webservice` | Creates a project that will host a new [REST web service](https://genhttp.org/documentation/content/webservices). |
-| `genhttp-website-mvc-scriban` | Creates a dynamic website using the [MVC pattern](https://genhttp.org/documentation/content/controllers) and with [Scriban](https://github.com/scriban/scriban/) as a templating engine. |
+| `genhttp-website-mvc-scriban` | Creates a dynamic website using the [MVC pattern](https://genhttp.org/documentation/content/controllers) and [Scriban](https://github.com/scriban/scriban/) as a templating engine. |
