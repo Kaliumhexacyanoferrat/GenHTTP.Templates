@@ -1,13 +1,16 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 
 using GenHTTP.Api.Protocol;
 
 using GenHTTP.Modules.Webservices;
 
-using App.Types;
+using $safeprojectname$.Types;
 
-namespace App.Services
+namespace $safeprojectname$.Services
 {
+
+    // For documentation, see: https://genhttp.org/documentation/content/webservices
 
     public class BookService
     {
@@ -15,7 +18,7 @@ namespace App.Services
         [ResourceMethod]
         public List<Book> GetBooks(int page, int pageSize)
         {
-            // GET http://localhost:8080/books/
+            // GET http://localhost:8080/books/?page=1&pageSize=20
             return new()
             {
                 new Book(1, "Lord of the Rings")
@@ -26,28 +29,28 @@ namespace App.Services
         public Book? GetBook(int id)
         {
             // GET http://localhost:8080/books/:id/
-            return null;
+            throw new NotImplementedException();
         }
 
         [ResourceMethod(RequestMethod.PUT)]
         public Book AddBook(Book book)
         {
             // PUT http://localhost:8080/books/
-            return new Book(0, "");
+            throw new NotImplementedException();
         }
 
         [ResourceMethod(RequestMethod.POST)]
         public Book? UpdateBook(Book book)
         {
             // POST http://localhost:8080/books/
-            return null;
+            throw new NotImplementedException();
         }
 
         [ResourceMethod(RequestMethod.DELETE, ":id")]
         public Book? DeleteBook(int id)
         {
             // DELETE http://localhost:8080/books/:id/
-            return null;
+            throw new NotImplementedException();
         }
 
     }

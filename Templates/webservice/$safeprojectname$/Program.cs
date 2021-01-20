@@ -1,13 +1,15 @@
-﻿using App.Services;
-
-using GenHTTP.Engine;
+﻿using GenHTTP.Engine;
 
 using GenHTTP.Modules.Layouting;
 using GenHTTP.Modules.Practices;
+using GenHTTP.Modules.Security;
 using GenHTTP.Modules.Webservices;
 
+using $safeprojectname$.Services;
+
 var api = Layout.Create()
-                .AddService<BookService>("books");
+                .AddService<BookService>("books")
+                .Add(CorsPolicy.Permissive());
 
 return Host.Create()
            .Handler(api)

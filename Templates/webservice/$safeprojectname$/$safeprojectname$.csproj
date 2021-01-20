@@ -7,6 +7,11 @@
     
     <LangVersion>9.0</LangVersion>
     <Nullable>enable</Nullable>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+
+    <AssemblyVersion>0.1.0.0</AssemblyVersion>
+    <FileVersion>0.1.0.0</FileVersion>
+    <Version>0.1.0</Version>
     
   </PropertyGroup>
 
@@ -14,6 +19,7 @@
     
     <PackageReference Include="GenHTTP.Core" Version="5.2.0" />
     
+    <PackageReference Include="GenHTTP.Modules.Security" Version="5.2.0" />
     <PackageReference Include="GenHTTP.Modules.Webservices" Version="5.2.0" />
     
   </ItemGroup>

@@ -5,6 +5,7 @@
   "identity": "GenHTTP.Templates.Webservice",
   "name": "GenHTTP: Webservice",
   "shortName": "genhttp-webservice",
+  "sourceName": "$safeprojectname$",
   "tags": {
     "language": "C#",
     "type": "project"
