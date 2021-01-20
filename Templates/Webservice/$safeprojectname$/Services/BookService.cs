@@ -5,7 +5,7 @@ using GenHTTP.Api.Protocol;
 
 using GenHTTP.Modules.Webservices;
 
-using $safeprojectname$.Types;
+using $safeprojectname$.Model;
 
 namespace $safeprojectname$.Services
 {
