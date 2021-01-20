@@ -15,4 +15,4 @@ dotnet new -i GenHTTP.Templates
 
 | Template      | Description  | 
 | ------------- |------------- | 
-| `dotnet new genhttp-webservice` | Creates a project that will host a simple [REST web service](https://genhttp.org/documentation/content/webservices) |
+| `dotnet new genhttp-webservice` | Creates a project that will host a new [REST web service](https://genhttp.org/documentation/content/webservices) |
