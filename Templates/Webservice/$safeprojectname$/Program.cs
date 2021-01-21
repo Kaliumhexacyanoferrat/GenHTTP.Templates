@@ -14,8 +14,10 @@ var api = Layout.Create()
 return Host.Create()
            .Handler(api)
            .Defaults()
+           .Console()
+//-:cnd:noEmit
 #if DEBUG
            .Development()
 #endif
-           .Console()
+//+:cnd:noEmit
            .Run();

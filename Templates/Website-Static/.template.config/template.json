@@ -1,0 +1,13 @@
+{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "Andreas Nägeli",
+  "classifications": [ "GenHTTP", "Website", "Static" ],
+  "identity": "GenHTTP.Templates.Website.Static",
+  "name": "GenHTTP: Static Website",
+  "shortName": "genhttp-website-static",
+  "sourceName": "$safeprojectname$",
+  "tags": {
+    "language": "C#",
+    "type": "project"
+  }
+}
