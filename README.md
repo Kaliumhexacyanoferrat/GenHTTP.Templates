@@ -3,6 +3,8 @@
 Templates to be used with `dotnet new` to quickly create projects based on
 the [GenHTTP webserver](https://genhttp.org/).
 
+![CI](https://github.com/Kaliumhexacyanoferrat/GenHTTP.Website/workflows/CI/badge.svg) [![Lines of Code](https://sonarcloud.io/api/project_badges/measure?project=GenHTTP.Templates&metric=ncloc)](https://sonarcloud.io/dashboard?id=GenHTTP.Templates) [![nuget Package](https://img.shields.io/nuget/v/GenHTTP.Templates.svg)](https://www.nuget.org/packages/GenHTTP.Templates/)
+
 ## Installation
 
 To install the template pack, run the following command in your terminal.
