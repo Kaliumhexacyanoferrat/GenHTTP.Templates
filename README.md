@@ -13,7 +13,7 @@ dotnet new -i GenHTTP.Templates
 
 ## Included Templates
 
-To use one of the templates below, create a new folder and run `dotnet new <template>`.
+To use one of the templates below, create a new folder and run `dotnet new <template>` in your terminal.
 
 | Template      | Description  | 
 | ------------- |------------- | 
