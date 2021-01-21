@@ -1,0 +1,8 @@
+﻿@foreach (var book in Model.Data) 
+{
+   <a href="./edit/@book.ID/">@book.ID</a> @book.Title <br />
+}
+
+<br />
+
+<a href="@Model.Route("create/")">Add new book</a>

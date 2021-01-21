@@ -1,0 +1,52 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net5.0</TargetFramework>
+    
+    <LangVersion>9.0</LangVersion>
+    <Nullable>enable</Nullable>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    
+    <AssemblyVersion>0.1.0.0</AssemblyVersion>
+    <FileVersion>0.1.0.0</FileVersion>
+    <Version>0.1.0</Version>
+    
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Static\fonts\Roboto-Regular.ttf" />
+    <None Remove="Scripts\custom.js" />
+    <None Remove="Styles\custom.css" />
+    <None Remove="Views\Books\BookCreation.cshtml" />
+    <None Remove="Views\Books\BookEditor.cshtml" />
+    <None Remove="Views\Books\BookList.cshtml" />
+    <None Remove="Views\Home.md" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Static\fonts\Roboto-Regular.ttf" />
+    <EmbeddedResource Include="Scripts\custom.js" />
+    <EmbeddedResource Include="Styles\custom.css" />
+    <EmbeddedResource Include="Views\Books\BookCreation.cshtml" />
+    <EmbeddedResource Include="Views\Books\BookEditor.cshtml" />
+    <EmbeddedResource Include="Views\Books\BookList.cshtml" />
+    <EmbeddedResource Include="Views\Home.md" />
+  </ItemGroup>
+
+  <ItemGroup>
+	  
+      <PackageReference Include="GenHTTP.Core" Version="5.2.0" />
+	  
+	  <PackageReference Include="GenHTTP.Modules.Websites" Version="5.2.0" />
+	  <PackageReference Include="GenHTTP.Modules.Controllers" Version="5.2.0" />
+	  
+	  <PackageReference Include="GenHTTP.Modules.Razor" Version="5.2.0" />
+	  <PackageReference Include="GenHTTP.Modules.Markdown" Version="5.2.0" />
+	  
+	  <PackageReference Include="GenHTTP.Themes.AdminLTE" Version="5.1.0" />
+  
+  </ItemGroup>
+
+</Project>

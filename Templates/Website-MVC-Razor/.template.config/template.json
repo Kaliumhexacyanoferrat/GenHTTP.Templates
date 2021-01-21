@@ -1,0 +1,13 @@
+{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "Andreas Nägeli",
+  "classifications": [ "GenHTTP", "Website", "MVC", "Razor" ],
+  "identity": "GenHTTP.Templates.Websites.MVC.Razor",
+  "name": "GenHTTP: MVC Website with Razor",
+  "shortName": "genhttp-website-mvc-razor",
+  "sourceName": "$safeprojectname$",
+  "tags": {
+    "language": "C#",
+    "type": "project"
+  }
+}
