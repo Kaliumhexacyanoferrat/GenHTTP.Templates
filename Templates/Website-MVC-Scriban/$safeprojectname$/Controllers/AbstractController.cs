@@ -12,7 +12,7 @@ namespace $safeprojectname$.Controllers
 
         protected IHandlerBuilder View<T>(string file, string title, T data) where T : class
         {
-            return ModScriban.Page(Resource.FromAssembly(file), (r, h) => new ViewModel<T>(r, h, data))
+            return ModScriban.Page<ViewModel<T>>(Resource.FromAssembly(file), (r, h) => new(new ViewModel<T>(r, h, data)))
                              .Title(title);
         }
 

@@ -3,7 +3,7 @@
   <PropertyGroup>
     
     <PackageType>Template</PackageType>
-    <PackageVersion>5.2</PackageVersion>
+    <PackageVersion>6.0</PackageVersion>
     <PackageId>GenHTTP.Templates</PackageId>
     
     <Title>GenHTTP Templates</Title>
@@ -11,7 +11,7 @@
     <Description>Templates to easily create web applications using the GenHTTP SDK.</Description>
     <PackageTags>dotnet-new;templates;GenHTTP;webservice;website;webapp</PackageTags>
 
-    <TargetFramework>net5.0</TargetFramework>
+    <TargetFramework>net6.0</TargetFramework>
 
     <IncludeContentInPack>true</IncludeContentInPack>
     <IncludeBuildOutput>false</IncludeBuildOutput>

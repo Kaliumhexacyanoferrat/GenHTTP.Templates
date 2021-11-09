@@ -3,9 +3,9 @@
   <PropertyGroup>
     
     <OutputType>Exe</OutputType>
-    <TargetFramework>net5.0</TargetFramework>
+    <TargetFramework>net6.0</TargetFramework>
     
-    <LangVersion>9.0</LangVersion>
+    <LangVersion>10.0</LangVersion>
     <Nullable>enable</Nullable>
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
 
@@ -17,10 +17,10 @@
 
   <ItemGroup>
     
-    <PackageReference Include="GenHTTP.Core" Version="5.2.0" />
+    <PackageReference Include="GenHTTP.Core" Version="6.0.0" />
     
-    <PackageReference Include="GenHTTP.Modules.Security" Version="5.2.0" />
-    <PackageReference Include="GenHTTP.Modules.Webservices" Version="5.2.0" />
+    <PackageReference Include="GenHTTP.Modules.Security" Version="6.0.0" />
+    <PackageReference Include="GenHTTP.Modules.Webservices" Version="6.0.0" />
     
   </ItemGroup>
 
