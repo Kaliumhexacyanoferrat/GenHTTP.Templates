@@ -17,10 +17,10 @@
 
   <ItemGroup>
     
-    <PackageReference Include="GenHTTP.Core" Version="6.0.0" />
+    <PackageReference Include="GenHTTP.Core" Version="6.2.0" />
     
-    <PackageReference Include="GenHTTP.Modules.Security" Version="6.0.0" />
-    <PackageReference Include="GenHTTP.Modules.Webservices" Version="6.0.0" />
+    <PackageReference Include="GenHTTP.Modules.Security" Version="6.2.0" />
+    <PackageReference Include="GenHTTP.Modules.Webservices" Version="6.2.0" />
     
   </ItemGroup>
 
