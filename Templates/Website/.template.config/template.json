@@ -6,6 +6,7 @@
   "name": "GenHTTP: Website",
   "shortName": "genhttp-website",
   "sourceName": "$safeprojectname$",
+  "description": "A project template to host a (mainly static) website using the GenHTTP webserver",
   "tags": {
     "language": "C#",
     "type": "project"

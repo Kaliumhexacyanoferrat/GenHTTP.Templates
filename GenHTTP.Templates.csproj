@@ -3,7 +3,7 @@
   <PropertyGroup>
     
     <PackageType>Template</PackageType>
-    <PackageVersion>6.2</PackageVersion>
+    <PackageVersion>6.3</PackageVersion>
     <PackageId>GenHTTP.Templates</PackageId>
     
     <Title>GenHTTP Templates</Title>

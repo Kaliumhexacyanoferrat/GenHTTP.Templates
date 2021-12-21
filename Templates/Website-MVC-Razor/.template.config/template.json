@@ -6,6 +6,7 @@
   "name": "GenHTTP: MVC Website with Razor",
   "shortName": "genhttp-website-mvc-razor",
   "sourceName": "$safeprojectname$",
+  "description": "A project template to host a dynamic website using the GenHTTP webserver",
   "tags": {
     "language": "C#",
     "type": "project"

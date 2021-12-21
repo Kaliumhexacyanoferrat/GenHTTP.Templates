@@ -6,6 +6,7 @@
   "name": "GenHTTP: Webservice",
   "shortName": "genhttp-webservice",
   "sourceName": "$safeprojectname$",
+  "description": "A project template to host a REST webservice using the GenHTTP webserver",
   "tags": {
     "language": "C#",
     "type": "project"

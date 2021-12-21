@@ -6,6 +6,7 @@
   "name": "GenHTTP: MVC Website with Scriban",
   "shortName": "genhttp-website-mvc-scriban",
   "sourceName": "$safeprojectname$",
+  "description": "A project template to host a dynamic website using the GenHTTP webserver",
   "tags": {
     "language": "C#",
     "type": "project"
