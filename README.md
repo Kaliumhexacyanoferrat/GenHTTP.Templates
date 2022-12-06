@@ -10,7 +10,7 @@ the [GenHTTP webserver](https://genhttp.org/).
 To install the template pack, run the following command in your terminal.
 
 ```
-dotnet new -i GenHTTP.Templates
+dotnet new install GenHTTP.Templates
 ```
 
 ## Included Templates
@@ -31,5 +31,5 @@ To start development of the templates itself, clone the repository and run the f
 in the new directory:
 
 ```
-dotnet new -i .
+dotnet new install .
 ```
