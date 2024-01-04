@@ -1,18 +1,13 @@
 ﻿using GenHTTP.Engine;
 
-using GenHTTP.Modules.Layouting;
 using GenHTTP.Modules.Practices;
-using GenHTTP.Modules.Security;
-using GenHTTP.Modules.Webservices;
 
-using $safeprojectname$.Services;
+using $safeprojectname$;
 
-var api = Layout.Create()
-                .AddService<BookService>("books")
-                .Add(CorsPolicy.Permissive());
+var project = Project.Setup();
 
 return Host.Create()
-           .Handler(api)
+           .Handler(project)
            .Defaults()
            .Console()
 //-:cnd:noEmit

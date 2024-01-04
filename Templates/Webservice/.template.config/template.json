@@ -10,5 +10,13 @@
   "tags": {
     "language": "C#",
     "type": "project"
-  }
+  },
+  "primaryOutputs": [
+    {
+      "path": "$safeprojectname$\\$safeprojectname$.csproj"
+    },
+    {
+      "path": "$safeprojectname$.Tests\\$safeprojectname$.Tests.csproj"
+    }
+  ]
 }
