@@ -1,15 +1,13 @@
 ﻿using GenHTTP.Engine;
 
-using GenHTTP.Modules.IO;
 using GenHTTP.Modules.Practices;
-using GenHTTP.Modules.StaticWebsites;
 
-var files = ResourceTree.FromAssembly("Content"); // or FromDirectory("/var/www/")
+using $safeprojectname$;
 
-var website = StaticWebsite.From(files);
+var project = Project.Create();
 
 return Host.Create()
-           .Handler(website)
+           .Handler(project)
            .Defaults()
            .Console()
 //-:cnd:noEmit

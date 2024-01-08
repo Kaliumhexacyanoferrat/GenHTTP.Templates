@@ -37,13 +37,13 @@
 
   <ItemGroup>
 	  
-      <PackageReference Include="GenHTTP.Core" Version="8.0.0" />
+    <PackageReference Include="GenHTTP.Core" Version="8.1.0" />
 	  
-	  <PackageReference Include="GenHTTP.Modules.Websites" Version="8.0.0" />
-	  <PackageReference Include="GenHTTP.Modules.Controllers" Version="8.0.0" />
+	  <PackageReference Include="GenHTTP.Modules.Websites" Version="8.1.0" />
+	  <PackageReference Include="GenHTTP.Modules.Controllers" Version="8.1.0" />
 	  
-	  <PackageReference Include="GenHTTP.Modules.Scriban" Version="8.0.0" />
-	  <PackageReference Include="GenHTTP.Modules.Markdown" Version="8.0.0" />
+	  <PackageReference Include="GenHTTP.Modules.Scriban" Version="8.1.0" />
+	  <PackageReference Include="GenHTTP.Modules.Markdown" Version="8.1.0" />
 	  
 	  <PackageReference Include="GenHTTP.Themes.AdminLTE" Version="8.0.0" />
   
