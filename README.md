@@ -25,6 +25,7 @@ To use one of the templates below, create a new folder and run `dotnet new <temp
 | `genhttp-website-mvc-razor` | Dynamic website using the [MVC pattern](https://genhttp.org/documentation/content/controllers) and [Razor](https://docs.microsoft.com/en-us/aspnet/core/mvc/views/razor?view=aspnetcore-5.0) as a templating engine. |
 | `genhttp-website-mvc-scriban` | Dynamic website using the [MVC pattern](https://genhttp.org/documentation/content/controllers) and [Scriban](https://github.com/scriban/scriban/) as a templating engine. |
 | `genhttp-website-static` | Project to serve a [static website](https://genhttp.org/documentation/content/static-websites) from the file system. |
+| `genhttp-spa` | Project to serve the distribution files of a [Single Page Application](https://genhttp.org/documentation/content/single-page-applications). |
 
 ## Template Development
 
