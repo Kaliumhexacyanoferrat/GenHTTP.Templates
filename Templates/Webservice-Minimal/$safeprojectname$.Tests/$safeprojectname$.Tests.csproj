@@ -4,7 +4,6 @@
     
     <TargetFramework>net8.0</TargetFramework>
     
-    <LangVersion>10.0</LangVersion>
     <Nullable>enable</Nullable>
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
 
@@ -19,7 +18,7 @@
     <PackageReference Include="MSTest.TestAdapter" Version="3.1.1" />
     <PackageReference Include="MSTest.TestFramework" Version="3.1.1" />
     
-    <PackageReference Include="GenHTTP.Testing" Version="8.1.0" />
+    <PackageReference Include="GenHTTP.Testing" Version="8.3.0" />
 
     <ProjectReference Include="..\$safeprojectname$\$safeprojectname$.csproj" />
     

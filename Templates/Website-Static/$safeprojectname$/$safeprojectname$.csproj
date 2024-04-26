@@ -5,7 +5,6 @@
     <OutputType>Exe</OutputType>
     <TargetFramework>net8.0</TargetFramework>
     
-    <LangVersion>10.0</LangVersion>
     <Nullable>enable</Nullable>
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
 
@@ -25,9 +24,9 @@
 
   <ItemGroup>
     
-    <PackageReference Include="GenHTTP.Core" Version="8.1.0" />
+    <PackageReference Include="GenHTTP.Core" Version="8.3.1" />
     
-    <PackageReference Include="GenHTTP.Modules.StaticWebsites" Version="8.1.0" />
+    <PackageReference Include="GenHTTP.Modules.StaticWebsites" Version="8.3.0" />
     
   </ItemGroup>
 
