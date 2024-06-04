@@ -21,9 +21,9 @@ To use one of the templates below, create a new folder and run `dotnet new <temp
 | ------------- |------------- | 
 | `genhttp-webservice` | A project that will host a new [REST web service](https://genhttp.org/documentation/content/webservices). |
 | `genhttp-webservice-minimal` | A project that will host a new [REST web service](https://genhttp.org/documentation/content/functional) in a single file. |
-| `genhttp-website` | A [website](https://genhttp.org/documentation/content/websites), mainly for static content such as a business website. |
-| `genhttp-website-mvc-razor` | Dynamic website using the [MVC pattern](https://genhttp.org/documentation/content/controllers) and [Razor](https://docs.microsoft.com/en-us/aspnet/core/mvc/views/razor?view=aspnetcore-5.0) as a templating engine. |
-| `genhttp-website-mvc-scriban` | Dynamic website using the [MVC pattern](https://genhttp.org/documentation/content/controllers) and [Scriban](https://github.com/scriban/scriban/) as a templating engine. |
+| `genhttp-website` \[[deprecated](https://github.com/Kaliumhexacyanoferrat/GenHTTP/issues/496)\] | A [website](https://genhttp.org/documentation/content/websites), mainly for static content such as a business website. |
+| `genhttp-website-mvc-razor` \[[deprecated](https://github.com/Kaliumhexacyanoferrat/GenHTTP/issues/496)\] | Dynamic website using the [MVC pattern](https://genhttp.org/documentation/content/controllers) and [Razor](https://docs.microsoft.com/en-us/aspnet/core/mvc/views/razor?view=aspnetcore-5.0) as a templating engine. |
+| `genhttp-website-mvc-scriban` \[[deprecated](https://github.com/Kaliumhexacyanoferrat/GenHTTP/issues/496)\] | Dynamic website using the [MVC pattern](https://genhttp.org/documentation/content/controllers) and [Scriban](https://github.com/scriban/scriban/) as a templating engine. |
 | `genhttp-website-static` | Project to serve a [static website](https://genhttp.org/documentation/content/static-websites) from the file system. |
 | `genhttp-spa` | Project to serve the distribution files of a [Single Page Application](https://genhttp.org/documentation/content/single-page-applications). |
 
