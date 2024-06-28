@@ -10,7 +10,7 @@ using $safeprojectname$.Model;
 namespace $safeprojectname$.Services
 {
 
-    // For documentation, see: https://genhttp.org/documentation/content/webservices
+    // For documentation, see: https://genhttp.org/documentation/content/frameworks/webservices
 
     public class BookService
     {

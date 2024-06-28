@@ -13,12 +13,12 @@
 
   <ItemGroup>
 
-    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.8.0" />
+	<PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.9.0" />
 
-    <PackageReference Include="MSTest.TestAdapter" Version="3.1.1" />
-    <PackageReference Include="MSTest.TestFramework" Version="3.1.1" />
+	<PackageReference Include="MSTest.TestAdapter" Version="3.4.3" />
+	<PackageReference Include="MSTest.TestFramework" Version="3.4.3" />
     
-    <PackageReference Include="GenHTTP.Testing" Version="8.3.0" />
+    <PackageReference Include="GenHTTP.Testing" Version="8.5.0" />
 
     <ProjectReference Include="..\$safeprojectname$\$safeprojectname$.csproj" />
     

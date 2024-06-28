@@ -16,9 +16,9 @@
 
   <ItemGroup>
     
-    <PackageReference Include="GenHTTP.Core" Version="8.3.1" />
+    <PackageReference Include="GenHTTP.Core" Version="8.5.2" />
 	  
-    <PackageReference Include="GenHTTP.Modules.SinglePageApplications" Version="8.3.0" />
+    <PackageReference Include="GenHTTP.Modules.SinglePageApplications" Version="8.5.0" />
     
   </ItemGroup>
 

@@ -1,7 +1,0 @@
-﻿{{ for book in data }}
-  [<a href="./edit/{{ book.id }}/">{{ book.id }}</a>]: {{ book.title }} <br />
-{{ end }}
-
-<br />
-
-<a href="{{ route 'create/' }}">Add new book</a>

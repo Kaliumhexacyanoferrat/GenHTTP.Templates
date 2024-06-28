@@ -1,0 +1,22 @@
+{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "Andreas Nägeli",
+  "classifications": [ "GenHTTP", "Webservices", "REST", "Web API", "Controllers" ],
+  "identity": "GenHTTP.Templates.Webservice.Controllers",
+  "name": "GenHTTP: Webservice (Controllers)",
+  "shortName": "genhttp-webservice-controllers",
+  "sourceName": "$safeprojectname$",
+  "description": "A project template to host a REST webservice by utilizing controllers using the GenHTTP webserver",
+  "tags": {
+    "language": "C#",
+    "type": "project"
+  },
+  "primaryOutputs": [
+    {
+      "path": "$safeprojectname$\\$safeprojectname$.csproj"
+    },
+    {
+      "path": "$safeprojectname$.Tests\\$safeprojectname$.Tests.csproj"
+    }
+  ]
+}
