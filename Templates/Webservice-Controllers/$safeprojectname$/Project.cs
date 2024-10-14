@@ -6,19 +6,16 @@ using GenHTTP.Modules.Controllers;
 
 using $safeprojectname$.Controllers;
 
-namespace $safeprojectname$
+namespace $safeprojectname$;
+
+public static class Project
 {
-    
-    public static class Project
+
+    public static IHandlerBuilder Setup()
     {
-
-        public static IHandlerBuilder Setup()
-        {
-            return Layout.Create()
-                         .AddController<DeviceController>("devices")
-                         .Add(CorsPolicy.Permissive());
-        }
-
+        return Layout.Create()
+                     .AddController<DeviceController>("devices")
+                     .Add(CorsPolicy.Permissive());
     }
 
 }
