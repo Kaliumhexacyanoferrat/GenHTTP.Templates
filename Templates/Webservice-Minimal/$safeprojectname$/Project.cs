@@ -3,6 +3,7 @@
 using GenHTTP.Modules.Layouting;
 using GenHTTP.Modules.Security;
 using GenHTTP.Modules.Functional;
+using GenHTTP.Modules.OpenApi;
 
 namespace $safeprojectname$;
 
@@ -26,6 +27,7 @@ public static class Project
 
         return Layout.Create()
                      .Add("books", bookApi)
+                     .AddOpenApi()
                      .Add(CorsPolicy.Permissive());
     }
 

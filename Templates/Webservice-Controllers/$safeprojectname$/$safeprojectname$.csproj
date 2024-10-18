@@ -21,6 +21,7 @@
 
     <PackageReference Include="GenHTTP.Modules.Security" Version="9.0.0" />
 	<PackageReference Include="GenHTTP.Modules.Controllers" Version="9.0.0" />
+    <PackageReference Include="GenHTTP.Modules.OpenApi" Version="9.0.0" />
 
   </ItemGroup>
 
