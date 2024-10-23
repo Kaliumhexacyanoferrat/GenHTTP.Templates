@@ -30,4 +30,4 @@ docker run -p 8080:8080 $safeprojectname$
 ## About
 
 This project uses the [GenHTTP webserver](https://genhttp.org/) to
-implement it's functionality.
+implement its functionality.
