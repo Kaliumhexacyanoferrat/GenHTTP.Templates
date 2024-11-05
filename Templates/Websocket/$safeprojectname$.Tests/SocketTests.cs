@@ -7,17 +7,15 @@ using GenHTTP.Testing;
 namespace $safeprojectname$.Tests;
 
 [TestClass]
-public class ApplicationTests
+public class SocketTests
 {
 
     [TestMethod]
-    public async Task TestRoot()
+    public async Task TestSocket()
     {
         using var runner = TestHost.Run(Project.Setup());
 
-        using var response = await runner.GetResponseAsync();
-
-        Assert.AreEqual(HttpStatusCode.OK, response.StatusCode);
+        // add your test code here, e.g. using Websocket.Client
     }
 
 }

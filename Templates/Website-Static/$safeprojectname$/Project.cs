@@ -3,19 +3,16 @@
 using GenHTTP.Modules.IO;
 using GenHTTP.Modules.StaticWebsites;
 
-namespace $safeprojectname$
+namespace $safeprojectname$;
+
+public static class Project
 {
 
-    public static class Project
+    public static IHandlerBuilder Create()
     {
+        var files = ResourceTree.FromAssembly("Content"); // or FromDirectory("/var/www/")
 
-        public static IHandlerBuilder Create()
-        {
-            var files = ResourceTree.FromAssembly("Content"); // or FromDirectory("/var/www/")
-
-            return StaticWebsite.From(files);
-        }
-
+        return StaticWebsite.From(files);
     }
 
 }

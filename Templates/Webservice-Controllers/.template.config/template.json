@@ -1,6 +1,6 @@
 {
   "$schema": "http://json.schemastore.org/template",
-  "author": "Andreas Nägeli",
+  "author": "genhttp.org",
   "classifications": [ "GenHTTP", "Webservices", "REST", "Web API", "Controllers" ],
   "identity": "GenHTTP.Templates.Webservice.Controllers",
   "name": "GenHTTP: Webservice (Controllers)",

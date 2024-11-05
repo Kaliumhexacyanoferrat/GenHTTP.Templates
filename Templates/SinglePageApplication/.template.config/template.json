@@ -1,6 +1,6 @@
 {
   "$schema": "http://json.schemastore.org/template",
-  "author": "Andreas Nägeli",
+  "author": "genhttp.org",
   "classifications": [ "GenHTTP", "SPA", "Single Page Application" ],
   "identity": "GenHTTP.Templates.SinglePageApplication",
   "name": "GenHTTP: Single Page Application (SPA)",
