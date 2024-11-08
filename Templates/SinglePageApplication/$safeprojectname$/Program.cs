@@ -7,13 +7,13 @@ using $safeprojectname$;
 var project = Project.Setup();
 
 // hosts your app on http://localhost:8080
-return Host.Create()
-           .Handler(project)
-           .Defaults()
-           .Console()
+return await Host.Create()
+                 .Handler(project)
+                 .Defaults()
+                 .Console()
 //-:cnd:noEmit
 #if DEBUG
-           .Development()
+                 .Development()
 #endif
 //+:cnd:noEmit
-           .Run();
+                 .RunAsync();

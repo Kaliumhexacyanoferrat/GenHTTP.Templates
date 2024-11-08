@@ -13,7 +13,7 @@ public class ApplicationTests
     [TestMethod]
     public async Task TestRoot()
     {
-        using var runner = TestHost.Run(Project.Setup());
+        await using var runner = await TestHost.RunAsync(Project.Setup());
 
         using var response = await runner.GetResponseAsync();
 

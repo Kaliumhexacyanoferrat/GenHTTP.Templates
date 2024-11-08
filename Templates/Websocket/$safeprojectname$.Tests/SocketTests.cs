@@ -13,7 +13,7 @@ public class SocketTests
     [TestMethod]
     public async Task TestSocket()
     {
-        using var runner = TestHost.Run(Project.Setup());
+        await using var runner = await TestHost.RunAsync(Project.Setup());
 
         // add your test code here, e.g. using Websocket.Client
     }

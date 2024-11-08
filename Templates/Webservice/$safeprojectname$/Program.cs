@@ -6,13 +6,13 @@ using $safeprojectname$;
 
 var project = Project.Setup();
 
-return Host.Create()
-           .Handler(project)
-           .Defaults()
-           .Console()
+return await Host.Create()
+                 .Handler(project)
+                 .Defaults()
+                 .Console()
 //-:cnd:noEmit
 #if DEBUG
-           .Development()
+                 .Development()
 #endif
 //+:cnd:noEmit
-           .Run();
+                 .RunAsync();

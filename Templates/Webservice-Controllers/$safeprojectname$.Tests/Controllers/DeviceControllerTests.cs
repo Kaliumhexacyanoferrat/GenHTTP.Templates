@@ -13,7 +13,7 @@ public class DeviceControllerTests
     [TestMethod]
     public async Task TestGetDevices()
     {
-        using var runner = TestHost.Run(Project.Setup());
+        await using var runner = await TestHost.RunAsync(Project.Setup());
 
         using var response = await runner.GetResponseAsync("/devices/");
 
