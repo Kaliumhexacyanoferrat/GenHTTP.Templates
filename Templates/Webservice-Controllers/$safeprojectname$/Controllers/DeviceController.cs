@@ -23,21 +23,21 @@ public class DeviceController
         return new(id, "Some Device", "127.0.0.1");
     }
 
-    [ControllerAction(RequestMethod.PUT)]
+    [ControllerAction(RequestMethod.Put)]
     public Guid Add(DeviceDetails device)
     {
         // PUT http://localhost:8080/devices/add/
         throw new NotImplementedException();
     }
 
-    [ControllerAction(RequestMethod.POST)]
+    [ControllerAction(RequestMethod.Post)]
     public Guid? Update(DeviceDetails book)
     {
         // POST http://localhost:8080/devices/update/
         throw new NotImplementedException();
     }
 
-    [ControllerAction(RequestMethod.DELETE)]
+    [ControllerAction(RequestMethod.Delete)]
     public Guid? Remove([FromPath] Guid id)
     {
         // DELETE http://localhost:8080/devices/remove/:id/

@@ -1,8 +1,11 @@
-﻿using GenHTTP.Engine;
+﻿using GenHTTP.Engine.Internal;
 
 using GenHTTP.Modules.Practices;
 
 using $safeprojectname$;
+
+// run this project and access the api at http://localhost:8080/books/
+// service specification at http://localhost:8080/openapi.json
 
 var project = Project.Setup();
 

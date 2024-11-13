@@ -13,7 +13,7 @@ public class WebsiteTests
     [TestMethod]
     public async Task TestCanFetchIndex()
     {
-        using var runner = TestHost.Run(Project.Create());
+        await using var runner = await TestHost.RunAsync(Project.Create());
 
         using var response = await runner.GetResponseAsync();
 

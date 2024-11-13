@@ -28,21 +28,21 @@ public class BookService
         throw new NotImplementedException();
     }
 
-    [ResourceMethod(RequestMethod.PUT)]
+    [ResourceMethod(RequestMethod.Put)]
     public Book AddBook(Book book)
     {
         // PUT http://localhost:8080/books/
         throw new NotImplementedException();
     }
 
-    [ResourceMethod(RequestMethod.POST)]
+    [ResourceMethod(RequestMethod.Post)]
     public Book? UpdateBook(Book book)
     {
         // POST http://localhost:8080/books/
         throw new NotImplementedException();
     }
 
-    [ResourceMethod(RequestMethod.DELETE, ":id")]
+    [ResourceMethod(RequestMethod.Delete, ":id")]
     public Book? DeleteBook(int id)
     {
         // DELETE http://localhost:8080/books/:id/
