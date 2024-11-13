@@ -3,7 +3,7 @@
 Templates to be used with `dotnet new` to quickly create projects based on
 the [GenHTTP webserver](https://genhttp.org/).
 
-![CI](https://github.com/Kaliumhexacyanoferrat/GenHTTP.Website/workflows/ci/badge.svg) [![Lines of Code](https://sonarcloud.io/api/project_badges/measure?project=Kaliumhexacyanoferrat_GenHTTP.Templates&metric=ncloc)](https://sonarcloud.io/dashboard?id=Kaliumhexacyanoferrat_GenHTTP.Templates) [![nuget Package](https://img.shields.io/nuget/v/GenHTTP.Templates.svg)](https://www.nuget.org/packages/GenHTTP.Templates/)
+![CI](https://github.com/Kaliumhexacyanoferrat/GenHTTP.Website/workflows/CI/badge.svg) [![Lines of Code](https://sonarcloud.io/api/project_badges/measure?project=Kaliumhexacyanoferrat_GenHTTP.Templates&metric=ncloc)](https://sonarcloud.io/dashboard?id=Kaliumhexacyanoferrat_GenHTTP.Templates) [![nuget Package](https://img.shields.io/nuget/v/GenHTTP.Templates.svg)](https://www.nuget.org/packages/GenHTTP.Templates/)
 
 ## Installation
 
