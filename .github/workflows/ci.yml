@@ -34,3 +34,11 @@ jobs:
     - name: End scan
       if: env.SONAR_TOKEN != null && env.SONAR_TOKEN != ''
       run: dotnet sonarscanner end /d:sonar.token="$SONAR_TOKEN"
+    - name: Install templates
+      run: dotnet new install .
+    - name: Test webservice framework
+      run: |
+       mkdir -p /tmp/genhttp/webservice/
+       cd /tmp/genhttp/webservice/
+       dotnet new genhttp-webservice
+       dotnet test
