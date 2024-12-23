@@ -34,3 +34,59 @@ jobs:
     - name: End scan
       if: env.SONAR_TOKEN != null && env.SONAR_TOKEN != ''
       run: dotnet sonarscanner end /d:sonar.token="$SONAR_TOKEN"
+    - name: Install templates
+      run: dotnet new install .
+    - name: Test webservice framework
+      run: |
+       mkdir -p /tmp/genhttp/webservice/
+       cd /tmp/genhttp/webservice/
+       dotnet new genhttp-webservice
+       cd webservice.Tests
+       dotnet test
+       cd /tmp/genhttp/webservice/
+       rm -rf ./webservice/bin/
+       rm -rf ./webservice/obj/
+       docker build -f Dockerfile.linux-x64 -t webservice .
+    - name: Test controller framework
+      run: |
+       mkdir -p /tmp/genhttp/controllers/
+       cd /tmp/genhttp/controllers/
+       dotnet new genhttp-webservice-controllers
+       cd controllers.Tests
+       dotnet test
+       cd /tmp/genhttp/controllers/
+       rm -rf ./controllers/bin/
+       rm -rf ./controllers/obj/
+       docker build -f Dockerfile.linux-x64 -t controllers .
+    - name: Test minimal framework
+      run: |
+       mkdir -p /tmp/genhttp/minimal/
+       cd /tmp/genhttp/minimal/
+       dotnet new genhttp-webservice-minimal
+       cd minimal.Tests
+       cd /tmp/genhttp/minimal/
+       rm -rf ./minimal/bin/
+       rm -rf ./minimal/obj/
+       docker build -f Dockerfile.linux-x64 -t minimal .
+    - name: Test static website
+      run: |
+       mkdir -p /tmp/genhttp/website/
+       cd /tmp/genhttp/website/
+       dotnet new genhttp-website-static
+       cd website.Tests
+       dotnet test
+       cd /tmp/genhttp/website/
+       rm -rf ./website/bin/
+       rm -rf ./website/obj/
+       docker build -f Dockerfile.linux-x64 -t website .
+    - name: Test websockets
+      run: |
+       mkdir -p /tmp/genhttp/websockets/
+       cd /tmp/genhttp/websockets/
+       dotnet new genhttp-websocket
+       cd websockets.Tests
+       dotnet test
+       cd /tmp/genhttp/websockets/
+       rm -rf ./websockets/bin/
+       rm -rf ./websockets/obj/
+       docker build -f Dockerfile.linux-x64 -t websocket .

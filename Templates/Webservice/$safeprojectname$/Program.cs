@@ -4,8 +4,23 @@ using GenHTTP.Modules.Practices;
 
 using $safeprojectname$;
 
-// run this project and access the api at http://localhost:8080/books/
-// service specification at http://localhost:8080/openapi.json
+//
+// GenHTTP Webservice Framework Template
+//
+// URLs:
+//   http://localhost:8080/books/
+//   http://localhost:8080/docs/
+//   http://localhost:8080/openapi.json
+//
+// Framework documentation:
+//   https://genhttp.org/documentation/content/frameworks/webservices/
+//
+// Method definitions:
+//   https://genhttp.org/documentation/content/concepts/definitions/
+//
+// Additional features:
+//   https://genhttp.org/documentation/content/
+//
 
 var project = Project.Setup();
 

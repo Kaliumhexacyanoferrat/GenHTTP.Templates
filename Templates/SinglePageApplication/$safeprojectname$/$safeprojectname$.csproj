@@ -19,12 +19,9 @@
 
   <ItemGroup>
 
-    <PackageReference Include="GenHTTP.Core" Version="9.3.0" />
+    <PackageReference Include="GenHTTP.Core" Version="9.4.0" />
 
-    <PackageReference Include="GenHTTP.Modules.SinglePageApplications" Version="9.3.0" />
-
-	<!-- see https://github.com/dotnet/sdk/issues/42651 -->
-	<NuGetAuditSuppress Include="https://github.com/advisories/GHSA-5f2m-466j-3848;https://github.com/advisories/GHSA-x5qj-9vmx-7g6g;https://github.com/advisories/GHSA-xhfc-gr8f-ffwc" />
+    <PackageReference Include="GenHTTP.Modules.SinglePageApplications" Version="9.4.0" />
 
   </ItemGroup>
 

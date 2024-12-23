@@ -4,6 +4,7 @@ using GenHTTP.Modules.Layouting;
 using GenHTTP.Modules.Security;
 using GenHTTP.Modules.Controllers;
 using GenHTTP.Modules.OpenApi;
+using GenHTTP.Modules.ApiBrowsing;
 
 using $safeprojectname$.Controllers;
 
@@ -17,6 +18,7 @@ public static class Project
         return Layout.Create()
                      .AddController<DeviceController>("devices")
                      .AddOpenApi()
+                     .AddSwaggerUI(segment: "docs")
                      .Add(CorsPolicy.Permissive());
     }
 

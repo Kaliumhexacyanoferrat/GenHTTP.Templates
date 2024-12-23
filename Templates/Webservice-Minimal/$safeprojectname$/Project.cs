@@ -4,6 +4,7 @@ using GenHTTP.Modules.Layouting;
 using GenHTTP.Modules.Security;
 using GenHTTP.Modules.Functional;
 using GenHTTP.Modules.OpenApi;
+using GenHTTP.Modules.ApiBrowsing;
 
 namespace $safeprojectname$;
 
@@ -14,13 +15,11 @@ public static class Project
 
     public static IHandlerBuilder Setup()
     {
-        // run this project and fetch a list of book records via http://localhost:8080/books/
         var books = new List<Book>()
         {
             new Book(1, "Lord of the Rings")
         };
 
-        // see https://genhttp.org/documentation/content/frameworks/functional/
         var bookApi = Inline.Create()
                             .Get(() => books)
                             .Put((Book book) => books.Add(book));
@@ -28,6 +27,7 @@ public static class Project
         return Layout.Create()
                      .Add("books", bookApi)
                      .AddOpenApi()
+                     .AddSwaggerUI(segment: "docs")
                      .Add(CorsPolicy.Permissive());
     }
 
