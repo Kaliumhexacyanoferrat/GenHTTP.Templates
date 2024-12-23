@@ -43,6 +43,7 @@ jobs:
        dotnet new genhttp-webservice
        cd webservice.Tests
        dotnet test
+       dotnet clean
        cd ../
        docker build -f Dockerfile.linux-x64 -t webservice .
     - name: Test controller framework
@@ -52,6 +53,7 @@ jobs:
        dotnet new genhttp-webservice-controllers
        cd controllers.Tests
        dotnet test
+       dotnet clean
        cd ../
        docker build -f Dockerfile.linux-x64 -t controllers .
     - name: Test minimal framework
@@ -61,6 +63,7 @@ jobs:
        dotnet new genhttp-webservice-minimal
        cd minimal.Tests
        dotnet test
+       dotnet clean
        cd ../
        docker build -f Dockerfile.linux-x64 -t minimal .
     - name: Test static website
@@ -70,6 +73,7 @@ jobs:
        dotnet new genhttp-website-static
        cd website.Tests
        dotnet test
+       dotnet clean
        cd ../
        docker build -f Dockerfile.linux-x64 -t website .
     - name: Test websockets
@@ -79,5 +83,6 @@ jobs:
        dotnet new genhttp-websocket
        cd websockets.Tests
        dotnet test
+       dotnet clean
        cd ../
        docker build -f Dockerfile.linux-x64 -t websocket .
