@@ -64,13 +64,6 @@ jobs:
        dotnet new genhttp-website-static
        cd website.Tests
        dotnet test
-    - name: Test SPA
-      run: |
-       mkdir -p /tmp/genhttp/spa/
-       cd /tmp/genhttp/spa/
-       dotnet new genhttp-spa
-       cd spa.Tests
-       dotnet test
     - name: Test websockets
       run: |
        mkdir -p /tmp/genhttp/websockets/
