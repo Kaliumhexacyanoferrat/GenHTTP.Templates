@@ -43,3 +43,38 @@ jobs:
        dotnet new genhttp-webservice
        cd webservice.Tests
        dotnet test
+    - name: Test controller framework
+      run: |
+       mkdir -p /tmp/genhttp/controllers/
+       cd /tmp/genhttp/controllers/
+       dotnet new genhttp-webservice-controllers
+       cd controllers.Tests
+       dotnet test
+    - name: Test minimal framework
+      run: |
+       mkdir -p /tmp/genhttp/minimal/
+       cd /tmp/genhttp/minimal/
+       dotnet new genhttp-webservice-minimal
+       cd minimal.Tests
+       dotnet test
+    - name: Test static website
+      run: |
+       mkdir -p /tmp/genhttp/static/
+       cd /tmp/genhttp/static/
+       dotnet new genhttp-website-static
+       cd static.Tests
+       dotnet test
+    - name: Test SPA
+      run: |
+       mkdir -p /tmp/genhttp/spa/
+       cd /tmp/genhttp/spa/
+       dotnet new genhttp-spa
+       cd spa.Tests
+       dotnet test
+    - name: Test websockets
+      run: |
+       mkdir -p /tmp/genhttp/websockets/
+       cd /tmp/genhttp/websockets/
+       dotnet new genhttp-websocket
+       cd websockets.Tests
+       dotnet test
