@@ -59,10 +59,10 @@ jobs:
        dotnet test
     - name: Test static website
       run: |
-       mkdir -p /tmp/genhttp/static/
-       cd /tmp/genhttp/static/
+       mkdir -p /tmp/genhttp/website/
+       cd /tmp/genhttp/website/
        dotnet new genhttp-website-static
-       cd static.Tests
+       cd website.Tests
        dotnet test
     - name: Test SPA
       run: |
