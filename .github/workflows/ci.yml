@@ -41,5 +41,5 @@ jobs:
        mkdir -p /tmp/genhttp/webservice/
        cd /tmp/genhttp/webservice/
        dotnet new genhttp-webservice
-       cd webservice
+       cd webservice.Tests
        dotnet test
