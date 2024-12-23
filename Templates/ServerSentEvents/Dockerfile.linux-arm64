@@ -1,0 +1,19 @@
+FROM mcr.microsoft.com/dotnet/sdk:9.0 AS build
+WORKDIR /source
+
+# copy csproj and restore as distinct layers
+COPY $safeprojectname$/*.csproj .
+RUN dotnet restore -r linux-arm64
+
+# copy and publish app and libraries
+COPY $safeprojectname$/ .
+RUN dotnet publish -c release -o /app -r linux-arm64 --no-restore /p:PublishTrimmed=true /p:TrimMode=Link
+
+# final stage/image
+FROM mcr.microsoft.com/dotnet/runtime-deps:9.0-alpine-arm64v8
+WORKDIR /app
+COPY --from=build /app .
+
+ENTRYPOINT ["./$safeprojectname$"]
+
+EXPOSE 8080

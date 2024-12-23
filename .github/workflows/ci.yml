@@ -90,3 +90,14 @@ jobs:
        rm -rf ./websockets/bin/
        rm -rf ./websockets/obj/
        docker build -f Dockerfile.linux-x64 -t websocket .
+    - name: Test server sent events
+      run: |
+       mkdir -p /tmp/genhttp/sse/
+       cd /tmp/genhttp/sse/
+       dotnet new genhttp-sse
+       cd sse.Tests
+       dotnet test
+       cd /tmp/genhttp/sse/
+       rm -rf ./sse/bin/
+       rm -rf ./sse/obj/
+       docker build -f Dockerfile.linux-x64 -t sse .
