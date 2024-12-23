@@ -23,6 +23,7 @@ To use one of the templates below, create a new folder and run `dotnet new <temp
 | `genhttp-webservice-minimal`     | A project that will host a new [REST web service](https://genhttp.org/documentation/content/frameworks/functional/) in a single file.                   |
 | `genhttp-webservice-controllers` | A project that will host a new REST web service using [controllers](https://genhttp.org/documentation/content/frameworks/controllers/).                 |
 | `genhttp-websocket`              | A project providing a web socket endpoint using the [websocket](https://genhttp.org/documentation/content/frameworks/websockets/) framework.            |
+| `genhttp-sse`                    | A project providing a SSE event source using the [Server Sent Events](https://genhttp.org/documentation/content/handlers/server-sent-events/) handler.  |
 | `genhttp-website-static`         | Project to serve a [static website](https://genhttp.org/documentation/content/frameworks/static-websites/) from the file system.                        |
 | `genhttp-spa`                    | Project to serve the distribution files of a [Single Page Application](https://genhttp.org/documentation/content/frameworks/single-page-applications/). |
 

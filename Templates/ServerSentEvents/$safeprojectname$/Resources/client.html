@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Tracker</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        #stocks {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-top: 20px;
+        }
+        .stock {
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+<body>
+<h1>Stock Tracker</h1>
+<div id="stocks"></div>
+
+<script>
+    // Establish a connection to the server using Server-Sent Events
+    const eventSource = new EventSource('http://localhost:8080/stock/');
+
+    // Function to display stock updates
+    function updateStock(symbol, value) {
+        let stockElement = document.getElementById(symbol);
+
+        if (!stockElement) {
+            // Create a new element for the stock symbol if it doesn't exist
+            stockElement = document.createElement('div');
+            stockElement.id = symbol;
+            stockElement.className = 'stock';
+            document.getElementById('stocks').appendChild(stockElement);
+        }
+
+        // Update stock value
+        stockElement.innerHTML = `<strong>${symbol}:</strong> ${value}`;
+    }
+
+    // Event listener for general updates
+    eventSource.onmessage = function(event) {
+        updateStock(event.type, event.data);
+    };
+
+    // Event listeners for specific stock symbols
+    const symbols = ['AAPL', 'GOOGL', 'MSFT']; // Example stocks
+    symbols.forEach(symbol => {
+        eventSource.addEventListener(symbol, event => {
+            updateStock(symbol, event.data);
+        });
+    });
+
+    // Error handling
+    eventSource.onerror = function() {
+        console.error('Connection to the server lost.');
+    };
+</script>
+</body>
+</html>
