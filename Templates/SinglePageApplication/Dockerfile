@@ -3,10 +3,10 @@ ARG TARGETARCH
 WORKDIR /source
 
 COPY --link $safeprojectname$/*.csproj .
-RUN dotnet restore -a $TARGETARCH
+RUN dotnet restore -a "$TARGETARCH"
 
 COPY --link $safeprojectname$/. .
-RUN dotnet publish --no-restore -a $TARGETARCH -o /app
+RUN dotnet publish --no-restore -a "$TARGETARCH" -o /app
 
 # Enable globalization and time zones:
 # https://github.com/dotnet/dotnet-docker/blob/main/samples/enable-globalization.md
