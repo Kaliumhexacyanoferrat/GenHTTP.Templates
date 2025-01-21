@@ -13,7 +13,7 @@ cd $safeprojectname$
 dotnet run
 ```
 
-This will make the website available at http://localhost:8080/.
+This will make the service available at http://localhost:8080/.
 
 ## Deployment
 
@@ -22,7 +22,7 @@ following commands in your terminal (and adjust the first line
 depending on your platform).
 
 ```
-docker build -f Dockerfile.linux-x64 -t $safeprojectname$ .
+docker build -t $safeprojectname$ .
 
 docker run -p 8080:8080 $safeprojectname$
 ```
