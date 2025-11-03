@@ -49,7 +49,7 @@ jobs:
 
   try-templates:
     
-    name: Try ${{ matrix.name }}
+    name: Try ${{ matrix.template.name }}
 
     runs-on: ubuntu-latest
 
