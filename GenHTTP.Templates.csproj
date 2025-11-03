@@ -10,12 +10,14 @@
     <Authors>Andreas Nägeli</Authors>
     <Description>Templates to easily create web applications using the GenHTTP SDK.</Description>
     <PackageTags>dotnet-new;templates;GenHTTP;webservice;website;webapp</PackageTags>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
 
     <TargetFramework>net9.0</TargetFramework>
 
     <IncludeContentInPack>true</IncludeContentInPack>
     <IncludeBuildOutput>false</IncludeBuildOutput>
     <ContentTargetFolders>content</ContentTargetFolders>
+    
     <NoWarn>$(NoWarn);NU5128</NoWarn>
 
   </PropertyGroup>
