@@ -19,7 +19,7 @@
     <PackageReference Include="MSTest.TestAdapter" Version="3.7.2" />
 	<PackageReference Include="MSTest.TestFramework" Version="3.7.2" />
 
-    <PackageReference Include="GenHTTP.Testing" Version="9.6.0" />
+    <PackageReference Include="GenHTTP.Testing" Version="9.8.0" />
 
     <ProjectReference Include="..\$safeprojectname$\$safeprojectname$.csproj" />
 

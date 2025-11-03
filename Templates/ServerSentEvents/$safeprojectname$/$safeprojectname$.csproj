@@ -19,9 +19,9 @@
 
   <ItemGroup>
 
-    <PackageReference Include="GenHTTP.Core" Version="9.6.0" />
+    <PackageReference Include="GenHTTP.Core" Version="9.8.0" />
 
-    <PackageReference Include="GenHTTP.Modules.ServerSentEvents" Version="9.6.0" />
+    <PackageReference Include="GenHTTP.Modules.ServerSentEvents" Version="9.8.0" />
 
   </ItemGroup>
 

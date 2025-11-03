@@ -19,12 +19,12 @@
 
   <ItemGroup>
 
-    <PackageReference Include="GenHTTP.Core" Version="9.6.0" />
+    <PackageReference Include="GenHTTP.Core" Version="9.8.0" />
 
-    <PackageReference Include="GenHTTP.Modules.Security" Version="9.6.0" />
-    <PackageReference Include="GenHTTP.Modules.Webservices" Version="9.6.0" />
-    <PackageReference Include="GenHTTP.Modules.OpenApi" Version="9.6.0" />
-    <PackageReference Include="GenHTTP.Modules.ApiBrowsing" Version="9.6.0" />
+    <PackageReference Include="GenHTTP.Modules.Security" Version="9.8.0" />
+    <PackageReference Include="GenHTTP.Modules.Webservices" Version="9.8.0" />
+    <PackageReference Include="GenHTTP.Modules.OpenApi" Version="9.8.0" />
+    <PackageReference Include="GenHTTP.Modules.ApiBrowsing" Version="9.8.0" />
 
   </ItemGroup>
 
