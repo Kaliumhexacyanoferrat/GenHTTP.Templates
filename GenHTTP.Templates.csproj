@@ -12,7 +12,7 @@
     <PackageTags>dotnet-new;templates;GenHTTP;webservice;website;webapp</PackageTags>
     <PackageReadmeFile>README.md</PackageReadmeFile>
 
-    <TargetFramework>net9.0</TargetFramework>
+    <TargetFramework>net10.0</TargetFramework>
 
     <IncludeContentInPack>true</IncludeContentInPack>
     <IncludeBuildOutput>false</IncludeBuildOutput>
