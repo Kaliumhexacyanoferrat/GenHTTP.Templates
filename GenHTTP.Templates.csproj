@@ -24,6 +24,20 @@
 
   <ItemGroup>
 
+    <Compile Include="Templates\ServerSentEvents\$safeprojectname$.Tests\TestConfig.cs" />
+
+    <Compile Include="Templates\SinglePageApplication\$safeprojectname$.Tests\TestConfig.cs" />
+
+    <Compile Include="Templates\Webservice-Controllers\$safeprojectname$.Tests\TestConfig.cs" />
+
+    <Compile Include="Templates\Webservice-Minimal\$safeprojectname$.Tests\TestConfig.cs" />
+
+    <Compile Include="Templates\Webservice\$safeprojectname$.Tests\TestConfig.cs" />
+
+    <Compile Include="Templates\Website-Static\$safeprojectname$.Tests\TestConfig.cs" />
+
+    <Compile Include="Templates\Websocket\$safeprojectname$.Tests\TestConfig.cs" />
+
     <Content Include="Templates\**\*" Exclude="Templates\**\bin\**;Templates\**\obj\**" />
 
     <None Include="LICENSE" Pack="true" PackagePath="\" />
