@@ -20,16 +20,24 @@ public static class Project
                               {
                                   Console.WriteLine("Open!");
                                   _AllSockets.Add(socket);
+
+                                  return Task.CompletedTask;
                               })
                               .OnClose((socket) =>
                               {
                                   Console.WriteLine("Close!");
                                   _AllSockets.Remove(socket);
+                                  
+                                  return Task.CompletedTask;
                               })
-                              .OnMessage((socket, message) =>
+                              .OnMessage(async (socket, message) =>
                               {
                                   Console.WriteLine(message);
-                                  _AllSockets.ForEach(s => s.Send("Echo: " + message));
+
+                                  foreach (var s in _AllSockets)
+                                  {
+                                      await s.SendAsync("Echo: " + message);
+                                  }
                               });
 
         return Layout.Create()
