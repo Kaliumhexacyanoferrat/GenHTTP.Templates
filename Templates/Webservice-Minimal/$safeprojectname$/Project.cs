@@ -27,7 +27,7 @@ public static class Project
         return Layout.Create()
                      .Add("books", bookApi)
                      .AddOpenApi()
-                     .AddSwaggerUI(segment: "docs")
+                     .AddRedoc(segment: "docs")
                      .Add(CorsPolicy.Permissive());
     }
 

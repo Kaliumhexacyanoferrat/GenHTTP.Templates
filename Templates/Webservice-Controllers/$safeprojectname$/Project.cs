@@ -18,7 +18,7 @@ public static class Project
         return Layout.Create()
                      .AddController<DeviceController>("devices")
                      .AddOpenApi()
-                     .AddSwaggerUI(segment: "docs")
+                     .AddRedoc(segment: "docs")
                      .Add(CorsPolicy.Permissive());
     }
 

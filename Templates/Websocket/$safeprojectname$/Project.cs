@@ -8,36 +8,32 @@ namespace $safeprojectname$;
 
 public static class Project
 {
-    private static List<IWebsocketConnection> _AllSockets = [];
+    private static List<IReactiveConnection> Clients = [];
 
     public static IHandlerBuilder Setup()
     {
         var client = Content.From(Resource.FromAssembly("client.html"));
 
         // see https://genhttp.org/documentation/content/frameworks/websockets/
-        var socket = Websocket.Create()
-                              .OnOpen((socket) =>
+        var socket = Websocket.Functional()
+                              .OnConnected(c =>
                               {
-                                  Console.WriteLine("Open!");
-                                  _AllSockets.Add(socket);
-
-                                  return Task.CompletedTask;
+                                  Clients.Add(c);
+                                  return ValueTask.CompletedTask;
                               })
-                              .OnClose((socket) =>
+                              .OnMessage(async (c, m) =>
                               {
-                                  Console.WriteLine("Close!");
-                                  _AllSockets.Remove(socket);
-                                  
-                                  return Task.CompletedTask;
-                              })
-                              .OnMessage(async (socket, message) =>
-                              {
-                                  Console.WriteLine(message);
+                                  var clientNumber = Clients.IndexOf(c);
 
-                                  foreach (var s in _AllSockets)
+                                  foreach (var client in Clients)
                                   {
-                                      await s.SendAsync("Echo: " + message);
+                                      await client.WriteAsync($"[{clientNumber}]: " + m.DataAsString);
                                   }
+                              })
+                              .OnClose((c, _) =>
+                              {
+                                  Clients.Remove(c);
+                                  return ValueTask.CompletedTask;
                               });
 
         return Layout.Create()
