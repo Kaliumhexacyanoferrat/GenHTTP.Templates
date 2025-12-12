@@ -8,7 +8,7 @@ namespace $safeprojectname$;
 
 public static class Project
 {
-    private static List<IReactiveConnection> _AllSockets = [];
+    private static List<IReactiveConnection> Clients = [];
 
     public static IHandlerBuilder Setup()
     {
@@ -18,21 +18,21 @@ public static class Project
         var socket = Websocket.Functional()
                               .OnConnected(c =>
                               {
-                                  clients.Add(c);
+                                  Clients.Add(c);
                                   return ValueTask.CompletedTask;
                               })
                               .OnMessage(async (c, m) =>
                               {
-                                  var clientNumber = clients.IndexOf(c);
+                                  var clientNumber = Clients.IndexOf(c);
 
-                                  foreach (var client in clients)
+                                  foreach (var client in Clients)
                                   {
                                       await client.WriteAsync($"[{clientNumber}]: " + m.DataAsString);
                                   }
                               })
                               .OnClose((c, _) =>
                               {
-                                  clients.Remove(c);
+                                  Clients.Remove(c);
                                   return ValueTask.CompletedTask;
                               });
 
