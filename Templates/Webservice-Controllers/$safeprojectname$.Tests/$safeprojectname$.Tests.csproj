@@ -18,7 +18,7 @@
 
     <PackageReference Include="MSTest" Version="4.0.1" />
 
-    <PackageReference Include="GenHTTP.Testing" Version="10.2.0" />
+    <PackageReference Include="GenHTTP.Testing" Version="10.3.0" />
 
     <ProjectReference Include="..\$safeprojectname$\$safeprojectname$.csproj" />
 
