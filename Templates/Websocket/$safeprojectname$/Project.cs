@@ -27,7 +27,7 @@ public static class Project
 
                                   foreach (var client in Clients)
                                   {
-                                      await client.WriteAsync($"[{clientNumber}]: " + m.DataAsString);
+                                      await client.WritePayloadAsync($"[{clientNumber}]: " + await m.ReadPayloadAsync<string>());
                                   }
                               })
                               .OnClose((c, _) =>
